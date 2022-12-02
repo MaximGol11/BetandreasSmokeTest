@@ -1,41 +1,16 @@
 {
-  "app": {
-    "bot": {
-      "token": "5553005257:AAEpezLFkWl6jip9iTqD2_5bhaASJzdfSME",
-      "chat": "-440279193",
-      "replyTo": ""
-    },
-    "base": {
-      "lang": "ru",
-      "messenger": "telegram",
-      "allureFolder": "./allure-report/",
-      "mattermostUrl": "",
-      "chart": true,
-      "chartName": "",
-      "project": ""
-    },
-    "mail": {
-      "host": "",
-      "port": "",
-      "username": "",
-      "password": "",
-      "enableSSL": false,
-      "from": "",
-      "recipient": ""
-    },
-    "proxy": {
-      "host": "",
-      "port": 0,
-      "username": "",
-      "password": ""
-    },
-    "skype": {
-      "appId": "",
-      "appSecret": "",
-      "serviceUrl": "",
-      "conversationId": "",
-      "botId": "",
-      "botName": ""
-    }
+  "base": {
+    "project": "some project",
+    "environment": "some env",
+    "comment": "some comment",
+    "reportLink": "",
+    "language": "en",
+    "allureFolder": "build/allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "5553005257:AAEpezLFkWl6jip9iTqD2_5bhaASJzdfSME",
+    "chat": "-440279193",
+    "replyTo": ""
   }
 }
