@@ -20,7 +20,7 @@ public class BaseTest {
 
         Configuration.browserCapabilities = capabilities;
         Configuration.browserSize = "1920x1080";
-        Configuration.remote = "http://192.168.31.239:8080/wd/hub/";
+        Configuration.remote = "http://192.168.125.22:8080/wd/hub/";
     }
 
     @AfterEach
