@@ -5,8 +5,11 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import helpers.Attach;
+
+import static com.codeborne.selenide.Selenide.open;
 
 public class BaseTest {
 
@@ -21,6 +24,11 @@ public class BaseTest {
         Configuration.browserCapabilities = capabilities;
         Configuration.browserSize = "1920x1080";
         Configuration.remote = "http://192.168.125.22:8080/wd/hub/";
+    }
+
+    @BeforeEach
+    public void startUp() {
+        open("https://betandreas.com/");
     }
 
     @AfterEach

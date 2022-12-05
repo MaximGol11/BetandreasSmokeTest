@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db724eb-f56f-43cd-9182-c88fb80893d6" name="Changes" comment="refactor and add fake tests" />
+    <list default="true" id="2db724eb-f56f-43cd-9182-c88fb80893d6" name="Changes" comment="fix selenoid url">
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +86,7 @@
       <recent name="C:\Users\sro13\IdeaProjects\BetandreasSmokeTest\" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BetandreasSmokeTest [allureReport]">
+  <component name="RunManager" selected="Gradle.RegistrationTest.registrationTest">
     <configuration name="BetandreasSmokeTest [allureReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -118,27 +120,6 @@
         <option name="taskNames">
           <list>
             <option value="allureServe" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BetandreasSmokeTest [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -192,13 +173,36 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="RegistrationTest.registrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;test.RegistrationTest.registrationTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegistrationTest.registrationTest" />
         <item itemvalue="Gradle.BetandreasSmokeTest [allureReport]" />
         <item itemvalue="Gradle.BetandreasSmokeTest [downloadAllure]" />
         <item itemvalue="Gradle.BetandreasSmokeTest [allureServe]" />
         <item itemvalue="Gradle.RegistrationTest" />
-        <item itemvalue="Gradle.BetandreasSmokeTest [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670250378383</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix selenoid url">
+      <created>1670252232955</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670252232955</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,6 +307,7 @@
     <MESSAGE value="fix conf" />
     <MESSAGE value="create package" />
     <MESSAGE value="refactor and add fake tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor and add fake tests" />
+    <MESSAGE value="fix selenoid url" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix selenoid url" />
   </component>
 </project>
