@@ -1,10 +1,10 @@
 {
   "base": {
     "project": "BetAndreasSmoke",
-    "environment": "some env",
-    "comment": "some comment",
+    "environment": "BA",
+    "comment": "BA comment",
     "reportLink": "http://192.168.125.22:8888/",
-    "language": "ru",
+    "language": "RU",
     "allureFolder": "allure-report/",
     "enableChart": true
   },

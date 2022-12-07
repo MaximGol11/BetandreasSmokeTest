@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db724eb-f56f-43cd-9182-c88fb80893d6" name="Changes" comment="add telegram.json without token and chat id">
+    <list default="true" id="2db724eb-f56f-43cd-9182-c88fb80893d6" name="Changes" comment="refactor config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notifications/telegram.json" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/telegram.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +88,7 @@
       <recent name="C:\Users\sro13\IdeaProjects\BetandreasSmokeTest\" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegistrationTest.registrationTest">
+  <component name="RunManager" selected="Gradle.RegistrationTest (1)">
     <configuration name="BetandreasSmokeTest [allureReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -151,7 +152,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -164,7 +165,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RegistrationTest&quot;" />
+            <option value="&quot;test.RegistrationTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -199,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegistrationTest (1)" />
         <item itemvalue="Gradle.RegistrationTest.registrationTest" />
         <item itemvalue="Gradle.BetandreasSmokeTest [allureReport]" />
         <item itemvalue="Gradle.BetandreasSmokeTest [downloadAllure]" />
         <item itemvalue="Gradle.BetandreasSmokeTest [allureServe]" />
-        <item itemvalue="Gradle.RegistrationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -300,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670257775623</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="refactor config">
+      <created>1670259690315</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670259690315</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -325,6 +333,7 @@
     <MESSAGE value="fix selenoid url" />
     <MESSAGE value="add open(url) :))))" />
     <MESSAGE value="add telegram.json without token and chat id" />
-    <option name="LAST_COMMIT_MESSAGE" value="add telegram.json without token and chat id" />
+    <MESSAGE value="refactor config" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor config" />
   </component>
 </project>
