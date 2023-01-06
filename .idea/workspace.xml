@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db724eb-f56f-43cd-9182-c88fb80893d6" name="Changes" comment="refactor config">
+    <list default="true" id="2db724eb-f56f-43cd-9182-c88fb80893d6" name="Changes" comment="host">
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/Locators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notifications/telegram.json" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/telegram.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/RegistrationFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/RegistrationFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/UserProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/UserProfilePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/FakeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/FakeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/RegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670259690315</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="host">
+      <created>1670408940159</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670408940159</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -334,6 +346,7 @@
     <MESSAGE value="add open(url) :))))" />
     <MESSAGE value="add telegram.json without token and chat id" />
     <MESSAGE value="refactor config" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor config" />
+    <MESSAGE value="host" />
+    <option name="LAST_COMMIT_MESSAGE" value="host" />
   </component>
 </project>

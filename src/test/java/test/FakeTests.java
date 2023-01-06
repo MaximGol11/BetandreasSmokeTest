@@ -1,5 +1,6 @@
 package test;
 
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -42,4 +43,7 @@ public class FakeTests {
     void some6Test() {
         assertTrue(false);
     }
+
+
+
 }

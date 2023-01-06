@@ -1,31 +1,35 @@
 package test;
 
+
 import helpers.Utils;
 import models.MainPage;
 import models.UserProfilePage;
 import org.junit.jupiter.api.Test;
-import test.BaseTest;
-
-import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selectors.withText;
-import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationTest extends BaseTest {
 
     final static String EMAIL = Utils.userEmailGenerator();
-    final static String PASS = "qweasd";
+    final static String PASS = "Qweasd12345";
+    final static String COUNTRY = "Латвия";
+    final static String CURRENCY = "EUR";
 
     @Test
-    void registrationTest() {
+    void emailRegistrationTest() {
         UserProfilePage userProfilePage = new MainPage()
                 .goToRegistrationFrame()
                 .gotoEmailRegister()
                 .fillEmail(EMAIL)
                 .fillPassword(PASS)
+                .selectCountry(COUNTRY)
+                .selectCurrency(CURRENCY)
                 .clickRegisterButton()
-                .goToUserProfilePage();
-        $(withText(EMAIL)).shouldBe(visible);
+                .goToUserProfilePage()
+                .checkUserProfileAfterEmailRegistration(EMAIL, COUNTRY, CURRENCY);
     }
 
+    @Test
+    void phoneRegistrationTest() {
+
+    }
 
 }

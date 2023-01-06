@@ -2,6 +2,7 @@ package models;
 
 import io.qameta.allure.Step;
 
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class UserProfilePage extends BasePage{
@@ -12,5 +13,11 @@ public class UserProfilePage extends BasePage{
         return this;
     }
 
-
+    @Step("Проверяем данные пользователя после регистрации")
+    public UserProfilePage checkUserProfileAfterEmailRegistration(String email, String country, String currency) {
+        $x("//input[@value='" + email + "']").shouldBe(visible);
+        $x("//input[@value='" + country + "']").shouldBe(visible);
+        $x("//input[@value='" + currency + "']").shouldBe(visible);
+        return this;
+    }
 }

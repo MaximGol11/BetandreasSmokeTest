@@ -2,26 +2,26 @@ package models;
 
 import io.qameta.allure.Step;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$x;
+import static com.codeborne.selenide.Selenide.*;
 
 public class MainPage extends BasePage{
 
     @Step("Открываем фрейм регистрации")
     public RegistrationFrame goToRegistrationFrame() {
-        $x("//button[contains(@class,'Registration_btn')]").click();
+        $x("//div[@class='Header_registration__1-FfP']/button").click();
         return new RegistrationFrame();
     }
 
     @Step("Открываем фрейм авторизации")
     public LoginFrame goToLoginFrame() {
         $x("//button[contains(@class, 'AuthButton')]").click();
+        sleep(5000);
         return new LoginFrame();
     }
 
     @Step("Переходим в профиль пользователя")
     public UserProfilePage goToUserProfilePage() {
-        $(".ProfilePanel_root__1GUVA").click();
+        $x("//div[contains(@class, 'ProfilePanel_pane')][2]").click();
         $x("//a[contains(@class, 'menu_edit')]").click();
         return new UserProfilePage();
     }

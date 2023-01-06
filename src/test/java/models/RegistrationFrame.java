@@ -10,7 +10,7 @@ public class RegistrationFrame extends BasePage{
 
     @Step("Выбираем регистрацию по email")
     public RegistrationFrame gotoEmailRegister() {
-        $(byText("По e-mail")).click();
+        $x("//button[contains(@class, 'auto_email_reg')]").click();
         return this;
     }
 
@@ -41,13 +41,15 @@ public class RegistrationFrame extends BasePage{
 
     @Step("Выбираем страну")
     public RegistrationFrame selectCountry(String country) {
-
+        $x("//div[contains(@class, 'auto_email_reg_country_code')]").click();
+        $x("//div[text()='"+ country + "']").click();
         return this;
     }
 
     @Step("Выбираем валюту")
     public RegistrationFrame selectCurrency(String currency) {
-
+        $x("//div[contains(@class, 'auto_reg_currency')]").click();
+        $x("//div[text()='" + currency + "']").click();
         return this;
     }
 
