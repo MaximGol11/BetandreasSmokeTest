@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db724eb-f56f-43cd-9182-c88fb80893d6" name="Changes" comment="host">
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/Locators.java" afterDir="false" />
+    <list default="true" id="2db724eb-f56f-43cd-9182-c88fb80893d6" name="Changes" comment="add new method and refactor tests, and add all locators">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/models/RegistrationFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/RegistrationFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/UserProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/UserProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/FakeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/FakeTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/RegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +89,7 @@
       <recent name="C:\Users\sro13\IdeaProjects\BetandreasSmokeTest\" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegistrationTest (1)">
+  <component name="RunManager" selected="Gradle.RegistrationTest.emailRegistrationTest">
     <configuration name="BetandreasSmokeTest [allureReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -106,48 +102,6 @@
         <option name="taskNames">
           <list>
             <option value="allureReport" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BetandreasSmokeTest [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="allureServe" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BetandreasSmokeTest [downloadAllure]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="downloadAllure" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -171,6 +125,52 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;test.RegistrationTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegistrationTest.emailRegistrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;test.RegistrationTest.emailRegistrationTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegistrationTest.phoneRegistrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;test.RegistrationTest.phoneRegistrationTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -205,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegistrationTest.emailRegistrationTest" />
         <item itemvalue="Gradle.RegistrationTest (1)" />
+        <item itemvalue="Gradle.RegistrationTest.phoneRegistrationTest" />
         <item itemvalue="Gradle.RegistrationTest.registrationTest" />
         <item itemvalue="Gradle.BetandreasSmokeTest [allureReport]" />
-        <item itemvalue="Gradle.BetandreasSmokeTest [downloadAllure]" />
-        <item itemvalue="Gradle.BetandreasSmokeTest [allureServe]" />
       </list>
     </recent_temporary>
   </component>
@@ -320,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670408940159</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add new method and refactor tests, and add all locators">
+      <created>1673001834405</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1673001834405</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -347,6 +354,7 @@
     <MESSAGE value="add telegram.json without token and chat id" />
     <MESSAGE value="refactor config" />
     <MESSAGE value="host" />
-    <option name="LAST_COMMIT_MESSAGE" value="host" />
+    <MESSAGE value="add new method and refactor tests, and add all locators" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new method and refactor tests, and add all locators" />
   </component>
 </project>

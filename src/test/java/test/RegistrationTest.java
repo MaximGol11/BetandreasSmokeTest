@@ -10,6 +10,7 @@ public class RegistrationTest extends BaseTest {
 
     final static String EMAIL = Utils.userEmailGenerator();
     final static String PASS = "Qweasd12345";
+    final static String PHONE_NUMBER = Utils.userMobilePhoneGenerator();
     final static String COUNTRY = "Латвия";
     final static String CURRENCY = "EUR";
 
@@ -29,7 +30,14 @@ public class RegistrationTest extends BaseTest {
 
     @Test
     void phoneRegistrationTest() {
-
+        UserProfilePage userProfilePage = new MainPage()
+                .goToRegistrationFrame()
+                .gotoPhoneNumberRegister()
+                .selectCountry(COUNTRY)
+                .selectCurrency(CURRENCY)
+                .fillPhoneNumber(PHONE_NUMBER)
+                .clickRegisterButton()
+                .goToUserProfilePage();
     }
 
 }

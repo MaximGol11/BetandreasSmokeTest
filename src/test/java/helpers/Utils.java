@@ -8,4 +8,9 @@ public class Utils {
         Date currentTime = new Date();
         return currentTime.getTime() + "_test@test.com";
     }
+
+    public static String userMobilePhoneGenerator() {
+        Date currentTime = new Date();
+        return currentTime.getTime() + "";
+    }
 }
