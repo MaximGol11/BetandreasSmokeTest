@@ -11,8 +11,8 @@ public class RegistrationTest extends BaseTest {
     final static String EMAIL = Utils.userEmailGenerator();
     final static String PASS = "Qweasd12345";
     final static String PHONE_NUMBER = Utils.userMobilePhoneGenerator();
-    final static String COUNTRY = "Латвия";
-    final static String CURRENCY = "EUR";
+    final static String COUNTRY = "США";
+    final static String CURRENCY = "USD";
 
     @Test
     void emailRegistrationTest() {

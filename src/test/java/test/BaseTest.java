@@ -22,18 +22,9 @@ public class BaseTest {
 
     private static final String BETANDREAS_PROD = "https://betandreas.com/";
     private static final String MOSTBET_PROD = "https://mostbet.com/";
-    private static final String MB_DEV_50 = "https://dev50.mostbet.com/";
+    private static final String MOSTBET_DEV50 = "https://dev50.mostbet.com/";
     private  static final String BA_DEV = "";
 
-/*    private WebDriverWait wait;
-    private WebDriver driver;
-
-    protected WebDriverWait getWait() {
-        if (wait == null) {
-            wait = new WebDriverWait(driver, 10);
-        }
-        return wait;
-    }*/
 
     @BeforeAll
     static void setup() {
@@ -50,7 +41,7 @@ public class BaseTest {
 
     @BeforeEach
     public void testSetUp() {
-        open(MB_DEV_50);
+        open(MOSTBET_DEV50);
         $x("//div[contains(@class, 'AppPreloader')]").shouldNotBe(Condition.visible, Duration.ofSeconds(40));
         $x("//button[contains(@class, 'GiftPopup_close')]").shouldBe(Condition.visible, Duration.ofSeconds(30)).click();
     }

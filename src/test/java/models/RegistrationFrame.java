@@ -1,14 +1,14 @@
 package models;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
 
 import java.time.Duration;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.Selectors.*;
+import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationFrame extends BasePage{
 
@@ -24,15 +24,27 @@ public class RegistrationFrame extends BasePage{
         return this;
     }
 
+/*            for (SelenideElement element : getLocators().emailInputAreaList) {
+        if (element.isDisplayed()) {
+            element.sendKeys(emailGenerator());
+        }
+    }*/
+
     @Step("Заполняем поле email")
     public RegistrationFrame fillEmail(String email) {
-        $x("//input[contains(@class,'email_reg_mail')]").sendKeys(email);
+        for (SelenideElement element : $$x("//input[contains(@class,'email_reg_mail')]")) {
+            if (element.isDisplayed()) element.sendKeys(email);
+        }
+      //  $x("//input[contains(@class,'email_reg_mail')]").sendKeys(email);
         return this;
     }
 
     @Step("Заполняем поле пароль")
     public RegistrationFrame fillPassword(String password) {
-        $x("//input[contains(@class,'email_reg_password')]").sendKeys(password);
+        for (SelenideElement element : $$x("//input[contains(@class,'email_reg_password')]")) {
+            if (element.isDisplayed()) element.sendKeys(password);
+        }
+        //$x("//input[contains(@class,'email_reg_password')]").sendKeys(password);
         return this;
     }
 
@@ -52,7 +64,6 @@ public class RegistrationFrame extends BasePage{
     @Step("Выбираем страну")
     public RegistrationFrame selectCountry(String country) {
         $x("//div[contains(@class, 'email_reg_country_code')]").click();
-        //$(withText(country)).click();
         $x("//div[text()='"+ country + "']").click();
         return this;
     }
@@ -61,7 +72,6 @@ public class RegistrationFrame extends BasePage{
     public RegistrationFrame selectCurrency(String currency) {
         $x("//div[contains(@class, 'auto_reg_currency')]").click();
         $x("//div[text()='" + currency + "']").click();
-        //$(byText(currency)).click();
         return this;
     }
 
